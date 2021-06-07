@@ -3,9 +3,9 @@
 
     function calcRectangleArea(width, height) {
         if (isNaN(width)  || isNaN(height) || typeof(width) === "boolean" || typeof(height) === "boolean") {
-            throw new Error('Width and height parameters can be only numbers.');
+            throw new Error('Повинно бути числові значення');
         } else if (width <= 0 || height <= 0) {
-            throw new Error('Width or height are scalar, not vector,so must be positive ;) ')
+            throw new Error('Повинно бути додатнє значення ')
         }
         return width * height;
     }
